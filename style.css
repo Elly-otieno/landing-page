@@ -1,0 +1,264 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    background: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+  .header .icons,
+  .contact{
+    color: #ddd;
+  }
+  .header .icons i{
+    border-left: 1px solid #ddd;
+    padding: 15px 10px;
+  }
+  .header .icons i:last-child{
+    border-right: 1px solid #ddd;
+  }
+  .contact i{
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+  }
+  .contact i:last-child{
+    border-right: none;
+  }
+  .help button{
+    background-color: transparent;
+    color: #ddd;
+    border: 3px solid #ddd;
+    padding: 5px;
+    border-radius: 70px;
+  }
+  
+  .menu{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    height: 6vh;
+    padding: 0 10%;
+    box-sizing: border-box;
+    background-color: #fff;
+    align-items: center;
+  }
+  .menu .title{
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .menu .title i{
+    background: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    -webkit-background-clip: text;
+    color: transparent
+  }
+  .menu-icons{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .menu-icons span{
+    margin-right: 10px;
+  }
+  .menu-icons span:last-child{
+    background-color: rgb(224, 126, 27);
+    padding: 13px 0;
+  }
+  @media (max-width: 900px) {
+    .menu{
+      display: grid;
+      align-items: center;
+      justify-items: end;
+    }
+    .menu .title,
+    .aboutImages,
+    .menu-icons,
+    .icons{
+      display: none;
+    }
+    .about{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .search{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+  }
+  .search button{
+    background-color: black;
+    color: #fff;
+    padding: 13px 0;
+  }
+  .home{
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url('business-meeting-1688892.jpg') center/cover no-repeat;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .home .home-content{
+    padding-right: 40%;
+    background: rgba(72, 62, 62, 0.2)
+  }
+  .home .home-content h1{
+    text-shadow: 0px -5px 0 rgba(195, 193, 193, 0.7);
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .home .home-content h2{
+    text-shadow: 300px 0 0 rgba(195, 193, 193, 0.5);
+    display: inline-block;
+    font-size: 30px;
+  }
+  .home .home-content .home-btn button{
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .more-btn{
+    background: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .request-btn{
+    background-color: transparent;
+    border:2px solid #ddd;
+    color: #ddd;
+  }
+  .blogs{
+    padding: 0 10%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .blogs .blog-services{
+    padding: 10px 0;
+    color: #ddd;
+    margin-right: 10px;
+  }
+  .blogs .blog-services i{
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+  }
+  .blogs .blog-services i span{
+    font-weight: 700;
+  }
+  .about{
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  .about-intro .heading,
+  .services-heading{
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .about-intro .heading .about-heading,
+  .services-main{
+    background-image: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    background-position: 0 100%;
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    font-weight: 900;
+  }
+  .about-intro span{
+    font-weight: 700;
+  }
+  .services{
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+  .services .services-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+  }
+  .aboutImages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img{
+    position: absolute;
+    bottom: -10px;
+    width: 20vw;
+    height: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223)); 
+    border-image-slice: 1
+  }
+  .myAbout-img{
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+  }
+  .services-menu{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+  }
+  .services-menu i{
+    background: linear-gradient(to right, rgb(224, 126, 27), rgb(220, 42, 223));
+    color: #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .services-img{
+    width: 400px;
+    height: 300px;
+  }
+  #services-img,
+  #services-imgs,
+  #services-imges{
+    height: 250px;
+    margin-right: 20px;
+    position: relative;
+  }
+  #services-img{
+    background: url('young-women-using-laptop-1902651.jpg') center/cover no-repeat;
+  }
+  #services-imgs{
+    background: url('programmer-1-1534401.jpg') center/cover no-repeat;
+  }
+  #services-imges{
+    background: url('') center/cover no-repeat;
+  }
